@@ -1,0 +1,33 @@
+.events {
+    padding: 64px 0 67px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        justify-content: center;
+        gap: 0 12px;
+    }
+
+    &__desc {
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    &__form {
+        margin-top: 39px;
+        display: flex;
+        * {
+            align-self: flex-start;
+        }
+        &>*+* {
+            margin-left: 35px;
+        }
+
+        .privacy-text {
+            margin-top: 16px;
+        }
+    }
+
+}

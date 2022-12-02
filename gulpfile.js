@@ -83,6 +83,8 @@ gulp.task('watch', function () {
     gulp.watch('src/assets/css/**/*.*').on('all', gulp.parallel('css', browserSync.reload));
     // images
     gulp.watch(['src/assets/images/*.*',]).on('all', gulp.parallel('images', browserSync.reload));
+    // fonts
+    gulp.watch(['src/assets/fonts/*.*',]).on('all', gulp.parallel('fonts', browserSync.reload));
     // js
     gulp.watch('src/assets/js/*.js').on('all', gulp.parallel('js', browserSync.reload));
     // html

@@ -1,0 +1,27 @@
+.bar {
+    display: flex;
+    gap: 45px 90px;
+    padding: 92px 0 93px;
+
+    &__item {
+        max-width: 456px;
+        display: flex;
+        flex-direction: column;
+
+        .button__menu {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        margin-top: 39px;
+        margin-bottom: 22px;
+    }
+
+    &__slider {
+        margin-top: auto;
+    }
+
+}
