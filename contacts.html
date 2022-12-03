@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
     <title>Document</title>
 </head>
 
@@ -13,142 +14,135 @@
     <div id="wrapper">
         <div class="pre-loader">
         </div>
-        <div class="ds background">
-            <header class="header">
-                <div class="logo">
-                    <a href="/" data-navigo><img src="../assets/images/logo.png" alt="logo"></a>
-                    <h1 class="header__pagename"></h1>
-                </div>
-            </header>
+        <div class="background">
             <div class="background__image">
-                <img src="../assets/images/background-1.jpeg" alt="image">
+                <img src="./assets/images/background-1.jpeg" alt="image">
                 <div class="background__overlay"></div>
             </div>
-            <nav class="ds nav">
-                <ul class="main-menu ds">
-                    <li class="main-menu__item">
-                        <a href="/page.html" class="main-menu__link" data-navigo>
-                            <div class="menu-center">
-                                <h2>МО</h2>
-                                <div>bar&restaurant</div>
-                            </div>
-                            <div class="menu-hidden">
-                                <img src="./assets/images/location.svg" alt="location">
-                                <div>Petrovsky lines 1<br>
-                                    Moscow</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="/bar.html" class="main-menu__link" data-navigo>
-                            <div class="menu-center">
-                                <h2>Menu & Bar</h2>
-                                <div>Dishes and drink</div>
-                            </div>
-                            <div class="menu-hidden">
-                                <img src="./assets/images/bar.svg" alt="bar">
-                                <div>Menu list</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="/events.html" class="main-menu__link" data-navigo>
-                            <div class="menu-center">
-                                <h2>Events</h2>
-                                <div>For you</div>
-                            </div>
-                            <div class="menu-hidden">
-                                <img src="./assets/images/star.svg" alt="star">
-                                <div>News, DJ and events</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="/contacts.html" class="main-menu__link" data-navigo>
-                            <div class="menu-center">
-                                <h2>Contacts</h2>
-                                <div>Find us and contact</div>
-                            </div>
-                            <div class="menu-hidden">
-                                <img src="./assets/images/contacts.png" alt="contacts">
-                                <div>Find us and contact</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
+
+        <header class="header">
+            <div class="logo">
+                <a href="/" data-navigo><img src="./assets/images/logo.png" alt="logo"></a>
+                <h1 class="header__pagename"></h1>
+            </div>
+        </header>
+        <nav class="nav">
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a href="/page.html" class="main-menu__link" data-navigo>
+                        <div class="menu-center">
+                            <h2>МО</h2>
+                            <div>bar&restaurant</div>
+                        </div>
+                        <div class="menu-hidden">
+                            <img src="./assets/images/location.svg" alt="location">
+                            <div>Petrovsky lines 1
+                                Moscow</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="/bar.html" class="main-menu__link" data-navigo>
+                        <div class="menu-center">
+                            <h2>Menu &amp; Bar</h2>
+                            <div>Dishes and drink</div>
+                        </div>
+                        <div class="menu-hidden">
+                            <img src="./assets/images/bar.svg" alt="bar">
+                            <div>Menu list</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="/events.html" class="main-menu__link" data-navigo>
+                        <div class="menu-center">
+                            <h2>Events</h2>
+                            <div>For you</div>
+                        </div>
+                        <div class="menu-hidden">
+                            <img src="./assets/images/star.svg" alt="star">
+                            <div>News, DJ and events</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="/contacts.html" class="main-menu__link" data-navigo>
+                        <div class="menu-center">
+                            <h2>Contacts</h2>
+                            <div>Find us and contact</div>
+                        </div>
+                        <div class="menu-hidden">
+                            <img src="./assets/images/contacts.png" alt="contacts">
+                            <div>Find us and contact</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 <div class="content">
     <div class="container">
-        <section class="events">
-            <div class="events__inner">
-                <div class="events__item">
-                    <div class="events__image">
-                        <img src="./assets/images/events.png" alt="events">
-                    </div>
-                    <div class="events__desc">
-                        Birgday Party<br>
-                        15.07<br>
-                        @Dmaselle<br>
-                        @DJ Ginzburg<br>
-                    </div>
-                </div>
-                <div class="events__item">
-                    <div class="events__image">
-                        <img src="./assets/images/events.png" alt="events">
-                    </div>
-                    <div class="events__desc">
-                        Birgday Party<br>
-                        15.07<br>
-                        @Dmaselle<br>
-                        @DJ Ginzburg<br>
-                    </div>
-                </div>
-                <div class="events__item">
-                    <div class="events__image">
-                        <img src="./assets/images/events.png" alt="events">
-                    </div>
-                    <div class="events__desc">
-                        Birgday Party<br>
-                        15.07<br>
-                        @Dmaselle<br>
-                        @DJ Ginzburg<br>
-                    </div>
-                </div>
-                <div class="events__item">
-                    <div class="events__image">
-                        <img src="./assets/images/events.png" alt="events">
-                    </div>
-                    <div class="events__desc">
-                        Birgday Party<br>
-                        15.07<br>
-                        @Dmaselle<br>
-                        @DJ Ginzburg<br>
-                    </div>
-                </div>
+        <section class="contacts">
+            <div class="contacts__map">
+                <img src="./assets/images/map.jpg" alt="map">
             </div>
-            <div class="reserve-form">
-                <form class="events__form">
-                    <input type="text" placeholder="Name" class="input-name">
-                    <input type="text" placeholder="Phone" class="input-phone">
-                    <div>
-                        <button class="btn-reserve">Reserve</button>
-                        <div class="privacy-text">
-                            Нажимая на кнопку, вы соглашаетесь на обработку<br>
-                            <a href="#">персональных данных</a>
-                        </div>
-                    </div>
-                </form>
+            <div class="contacts__desc">
+                <div class="contacts__block">
+                    <ul class="contacts__list">
+                        <li class="contacts__title">
+                            КОНТАКТЫ
+                        </li>
+                        <li>
+                            <div class="contacts__ico">
+                                <img src="./assets/images/geo.svg" alt="geo">
+                            </div>
+                            <div class="contacts__list-info">
+                                Москва, Петровские линии, 1
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contacts__ico">
+                                <img src="./assets/images/time.svg" alt="time">
+                            </div>
+                            <div class="contacts__list-info">
+                                <div>Вс-Чт 12:00-00:00</div>
+                                <div>Пт-Сб 12:00-05:00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contacts__ico">
+                                <img src="./assets/images/tel.svg" alt="tel">
+                            </div>
+                            <div class="contacts__list-info">
+                                <a href="#">8 (968) 449-64-11</a>
+                            </div>
+                        </li>
+                        <li class="contacts__soc">
+                            <a href="#"><img src="./assets/images/wa.svg" alt="whatsapp"></a>
+                            <a href="#"><img src="./assets/images/inst.svg" alt="instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__btns">
+                    <a href="#" class="button__menu">
+                        Menu
+                    </a>
+
+                    <a href="#" class="button__menu">
+                        Breakfast
+                    </a>
+                </div>
             </div>
         </section>
     </div>
 </div>
 <div class="pageName">
-    Events
+    Contacts
 </div>
 </div>
 <script src="./assets/js/jquery-3.6.1.min.js"></script>
 <script src="./assets/js/navigo.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
 <script src="./assets/js/main.js"></script>
 </body>
 

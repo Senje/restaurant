@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
     <title>Document</title>
 </head>
 
@@ -13,71 +14,72 @@
     <div id="wrapper">
         <div class="pre-loader">
         </div>
-        <div class="ds background">
-            <header class="header">
-                <div class="logo">
-                    <a href="/" data-navigo><img src="../assets/images/logo.png" alt="logo"></a>
-                    <h1 class="header__pagename"></h1>
-                </div>
-            </header>
+        <div class="background">
             <div class="background__image">
-                <img src="../assets/images/background-1.jpeg" alt="image">
+                <img src="./assets/images/background-1.jpeg" alt="image">
                 <div class="background__overlay"></div>
             </div>
-            <nav class="ds nav">
-                <ul class="main-menu ds">
-                    <li class="main-menu__item">
-                        <a href="/page.html" class="main-menu__link" data-navigo>
-                            <div class="menu-center">
-                                <h2>МО</h2>
-                                <div>bar&restaurant</div>
-                            </div>
-                            <div class="menu-hidden">
-                                <img src="./assets/images/location.svg" alt="location">
-                                <div>Petrovsky lines 1<br>
-                                    Moscow</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="/bar.html" class="main-menu__link" data-navigo>
-                            <div class="menu-center">
-                                <h2>Menu & Bar</h2>
-                                <div>Dishes and drink</div>
-                            </div>
-                            <div class="menu-hidden">
-                                <img src="./assets/images/bar.svg" alt="bar">
-                                <div>Menu list</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="/events.html" class="main-menu__link" data-navigo>
-                            <div class="menu-center">
-                                <h2>Events</h2>
-                                <div>For you</div>
-                            </div>
-                            <div class="menu-hidden">
-                                <img src="./assets/images/star.svg" alt="star">
-                                <div>News, DJ and events</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="/contacts.html" class="main-menu__link" data-navigo>
-                            <div class="menu-center">
-                                <h2>Contacts</h2>
-                                <div>Find us and contact</div>
-                            </div>
-                            <div class="menu-hidden">
-                                <img src="./assets/images/contacts.png" alt="contacts">
-                                <div>Find us and contact</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
+
+        <header class="header">
+            <div class="logo">
+                <a href="/" data-navigo><img src="./assets/images/logo.png" alt="logo"></a>
+                <h1 class="header__pagename"></h1>
+            </div>
+        </header>
+        <nav class="nav">
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a href="/page.html" class="main-menu__link" data-navigo>
+                        <div class="menu-center">
+                            <h2>МО</h2>
+                            <div>bar&restaurant</div>
+                        </div>
+                        <div class="menu-hidden">
+                            <img src="./assets/images/location.svg" alt="location">
+                            <div>Petrovsky lines 1
+                                Moscow</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="/bar.html" class="main-menu__link" data-navigo>
+                        <div class="menu-center">
+                            <h2>Menu &amp; Bar</h2>
+                            <div>Dishes and drink</div>
+                        </div>
+                        <div class="menu-hidden">
+                            <img src="./assets/images/bar.svg" alt="bar">
+                            <div>Menu list</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="/events.html" class="main-menu__link" data-navigo>
+                        <div class="menu-center">
+                            <h2>Events</h2>
+                            <div>For you</div>
+                        </div>
+                        <div class="menu-hidden">
+                            <img src="./assets/images/star.svg" alt="star">
+                            <div>News, DJ and events</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="/contacts.html" class="main-menu__link" data-navigo>
+                        <div class="menu-center">
+                            <h2>Contacts</h2>
+                            <div>Find us and contact</div>
+                        </div>
+                        <div class="menu-hidden">
+                            <img src="./assets/images/contacts.png" alt="contacts">
+                            <div>Find us and contact</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 <div class="content">
     <div class="container">
         <section class="events">
@@ -128,6 +130,7 @@
                 </div>
             </div>
             <div class="reserve-form">
+                <div class="reserve__title">Reserve</div>
                 <form class="events__form">
                     <input type="text" placeholder="Name" class="input-name">
                     <input type="text" placeholder="Phone" class="input-phone">
@@ -149,6 +152,7 @@
 </div>
 <script src="./assets/js/jquery-3.6.1.min.js"></script>
 <script src="./assets/js/navigo.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
 <script src="./assets/js/main.js"></script>
 </body>
 
