@@ -1,15 +1,15 @@
 $(document).ready(() => {
     const router = new Navigo('/');
-    router.on('/page.html', function () {
+    router.on('page.html', function () {
         routeAjax(this.name);
     })
-        .on('/bar.html', function () {
+        .on('bar.html', function () {
             routeAjax(this.name);
         })
-        .on('/events.html', function () {
+        .on('events.html', function () {
             routeAjax(this.name);
         })
-        .on('/contacts.html', function () {
+        .on('contacts.html', function () {
             routeAjax(this.name);
         })
         .on('/', () => {
