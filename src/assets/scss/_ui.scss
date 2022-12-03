@@ -2,6 +2,7 @@
     width: 300px;
     padding: 18px 10px 19px;
     border: 1px solid #FFFFFF;
+    color: #fff;
 
     &::before {
         vertical-align: middle;
@@ -11,7 +12,9 @@
     }
 }
 
-input[type=text], button {
+
+input[type=text],
+button {
     background: transparent;
     text-align: left;
     padding: 18px 0 19px 54px;
@@ -38,7 +41,16 @@ input[type=text], button {
 
 .reserve-form {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .reserve__title {
+        margin-top: 56px;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
 
     .input-name {
         background: url('../images/input-name.png') no-repeat;
@@ -51,7 +63,16 @@ input[type=text], button {
     }
 
     .btn-reserve {
+        cursor: pointer;
         background: url('../images/reserve-ico.png') no-repeat;
         background-position: 24px 22px;
+        transition: 0.4s;
+
+        &:hover {
+            color: #000;
+            background-color: #FFFFFF;
+            background-image: url('../images/reserve-ico_black.png');
+            background-repeat: no-repeat;
+        }
     }
 }

@@ -22,6 +22,11 @@
 
     &__slider {
         margin-top: auto;
+        img {
+            width: 456px;
+            height: auto;
+            object-fit: cover;
+        }
     }
 
 }
