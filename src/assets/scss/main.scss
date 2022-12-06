@@ -102,7 +102,7 @@ body {
 .nav.nav_hide {
   border: none;
 
-  transform: translateY(-100%);
+  transform: translateY(-200%);
 
   & .menu-hidden {
     display: none;
@@ -232,6 +232,7 @@ body {
 .content {
   display: none;
   text-align: justify;
+  padding: 0 15px;
 
   &.active {
     display: block;

@@ -8,6 +8,14 @@
         gap: 0 12px;
     }
 
+    &__image {
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
     &__desc {
         font-size: 20px;
         line-height: 26px;
@@ -18,9 +26,11 @@
     &__form {
         margin-top: 16px;
         display: flex;
+
         * {
             align-self: flex-start;
         }
+
         &>*+* {
             margin-left: 35px;
         }

@@ -53,7 +53,7 @@ gulp.task('html:validator', function () {
 gulp.task('js', function () {
     deleteAsync('./dist/assets/js/*.*');
     return gulp.src('./src/assets/js/*.js')
-        .pipe(GulpUglify())
+        // .pipe(GulpUglify())
         .pipe(gulp.dest('./dist/assets/js/'))
         .pipe(browserSync.stream());
 });

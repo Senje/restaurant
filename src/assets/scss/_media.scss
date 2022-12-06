@@ -104,17 +104,19 @@
 
 
     .events {
+        padding: 25px 20px 41px;
         &__inner {
             display: grid;
-            grid-template-columns: repeat(2, 176px);
+            grid-template-columns: repeat(2, 156px);
             justify-content: center;
             gap: 17px 8px;
         }
 
         &__image {
             img {
-                width: 176px;
-                height: 176px;
+                width: 156px;
+                height: 156px;
+                object-fit: cover;
             }
         }
 
@@ -148,6 +150,7 @@
         }
 
         &__desc {
+            width: 100%;
             margin-left: 0;
             margin-top: -20px;
             font-size: 14px;

@@ -1,12 +1,14 @@
 .bar {
     display: flex;
-    gap: 45px 90px;
+    gap: 45px 85px;
     padding: 92px 0 93px;
 
     &__item {
+        flex: 0 0 auto;
         max-width: 456px;
         display: flex;
         flex-direction: column;
+        flex: 0 1 33.3333%;
 
         .button__menu {
             display: block;
@@ -22,9 +24,11 @@
 
     &__slider {
         margin-top: auto;
+
         img {
-            width: 456px;
+            width: 100%;
             height: auto;
+            max-height: 268px;
             object-fit: cover;
         }
     }
