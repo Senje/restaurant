@@ -47,6 +47,8 @@ $(document).ready(() => {
                 phoneMask();
                 // slider
                 sliders();
+                // Send mail
+                sendMail();
             }
         });
     }
@@ -55,7 +57,30 @@ $(document).ready(() => {
     function sliders() {
         $('#slider-menu, #slider-breakfast, #slider-bar').slick({
             arrows: false,
-            dots: true,
+            dots: true
+        });
+    }
+
+    // Send mail
+    function sendMail() {
+        $('.events__form').find('.btn-reserve').on('click', function (event) {
+            event.preventDefault();
+            $.ajax({
+                url: 'mail.php',
+                method: 'POST',
+                dataType: 'html',
+                data: {
+                    data: $('.events__form').serialize(),
+                },
+                success: function (data) {
+                    $('.events__form').find('input').val('');
+                    if (data == 'OK') {
+                        $('.reserve__status').html('Сообщение было успешно отправленно!<br>Мы свяжемся с Вами в ближайшее время!');
+                    } else {
+                        $('.reserve__status').html('Что-то пошло не так :(<br>Попробуйте позже!');
+                    }
+                }
+            });
         });
     }
     // Mask for phone inputs
